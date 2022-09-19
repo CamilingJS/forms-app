@@ -14,14 +14,18 @@
   height: 100%;
   width: 100%;
 }
-
-
 .RightImage {
+  height: 100vh; 
   width: 50%;
-  height: 100vh;
-  background-image: url('https://res.cloudinary.com/dxctpvd8v/image/upload/v1662922291/SkillsSidePhotoV2_fgmqqv.png');
-  background-size: cover;
 }
+.RightImage img {
+  width: 100%; 
+  height: 100vh;
+  object-fit: cover;
+
+}
+
+
 .LeftContainer{
   width: 50%;
   height: 100vh;
@@ -45,7 +49,7 @@
 .TextInput{
   font-family: 'Inter', sans-serif;
 }
-.TextInput input {
+.TextInput > input {
   background-color: transparent;
   border: none;
   color: white; 
@@ -54,18 +58,43 @@
   width: 100%;
   height: 40px;
   border-bottom: 1px solid white;
+  display: flex;
+  flex-wrap: wrap;
 }
-.TextInput input::placeholder{
+.TextInput > input:focus {
+  outline: none;
+  font-size: x-large;
+}
+.TextInput > input::placeholder{
   color: white; 
   font-size: x-large;
   font-family: 'Inter', sans-serif;
   padding-bottom: 8px;
 }
-
 .ButtonGroup {
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 500px;
 }
-.ButtonGroup button {
+.ButtonGroup > button {
+  margin-top: 16px;
+  background-color: teal;
+  height: 40px;
+  width: 120px;
+  border: white 1px solid;
+  color: white; 
+  transition: .5s ease-in;
+}
+
+.ButtonGroup > button:hover {
+  color: teal; 
+  background-color: white;
+  transition: .5s ease-in;
+}
+.card > button {
+  margin-top: 30px;
   cursor: pointer;
   border: none;
   background-color: white;
@@ -76,9 +105,12 @@
   color: teal; 
 }
 
-@media screen and (max-width: 424px) {
-  .lr-container {
+@media screen and (max-width: 729px) {
+  .RightImage {
     display: none; 
+  }
+  .LeftContainer {
+    width: 100%;
   }
 
 }
