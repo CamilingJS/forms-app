@@ -15,7 +15,7 @@ const BUTTON_TEXT = [
     '$100-$1K', '$1K-$5K', 'No limit'
 ]
 
-export default function ButtonGroup(){
+export default function ButtonGroup({ setButtonSelection, setButtonData }){
 
     const [selectedButton, setSelectedButton] = useState(0)
 
@@ -29,7 +29,13 @@ export default function ButtonGroup(){
 
             {
                 BUTTON_TEXT.map((btnText, i) => (
-                    <button onClick={()=>setSelectedButton(i)} style={ selectedButton === i ? ALT_STYLES : {} } >{btnText}</button>
+                    <button onClick={()=>{setSelectedButton(i);     
+                        setButtonData(btnText);
+                    }} 
+
+                    style={ selectedButton === i ? ALT_STYLES : {} } >
+                        {btnText}
+                    </button>
                 )
                     
                 )
