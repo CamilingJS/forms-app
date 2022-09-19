@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Navbar Place Holder</h1>
+      <div className="nav" ><div className='logoJayCam'></div></div>
       <div className="lr-container" >
         <LeftContainer stage={stage} setStage={setStage} / >
         <RightImage stage={stage} / >

@@ -8,6 +8,17 @@
   align-items: center;
 }
 
+.nav{
+  height: 80px;
+}
+.logoJayCam{
+  background-image: url('./imgs/JayCam-Dev_Horizontal.svg');
+  height: 80px;
+  width: 240px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .lr-container{
   display: flex;
   justify-content: center;
