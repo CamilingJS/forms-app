@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <div className="nav" ><div className='logoJayCam'></div></div>
+      <div className="nav" ><a target="_blank" href='https://jaycam.dev/'><div className='logoJayCam'></div></a></div>
       <div className="lr-container" >
         <LeftContainer stage={stage} setStage={setStage} / >
         <RightImage stage={stage} / >
