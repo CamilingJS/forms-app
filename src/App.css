@@ -85,12 +85,12 @@
 .ButtonGroup {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 500px;
 }
 .ButtonGroup > button {
   margin-top: 16px;
+  margin-right: 16px;
   background-color: teal;
   height: 40px;
   width: 120px;
