@@ -85,8 +85,8 @@
 .ButtonGroup {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 500px;
 }
 .ButtonGroup > button {
   margin-top: 16px;
